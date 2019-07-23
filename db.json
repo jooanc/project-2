@@ -1,0 +1,28 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "username": "testuser",
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com",
+      "password": "p4ssw0rd"
+    },
+    {
+      "id": 2,
+      "username": "testuser1",
+      "first_name": "Sebastian1",
+      "last_name": "Eschweiler1",
+      "email": "sebastian1@codingthesmartway.com",
+      "password": "p4ssw0rd"
+    },
+    {
+      "id": 3,
+      "username": "testuser2",
+      "first_name": "Sebastian2",
+      "last_name": "Eschweiler2",
+      "email": "sebastian2@codingthesmartway.com",
+      "password": "p4ssw0rd"
+    }
+  ]
+}
