@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 import { User } from '../models/user.model';
 
 @Injectable({
@@ -8,7 +7,6 @@ import { User } from '../models/user.model';
 export class ContextService {
 
   private user: User = null;
-
 
   constructor() { }
 

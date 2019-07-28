@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-10">
-      <h1>{{currentUser.username}}</h1>
+      <h1>Profile of {{currentUser.userName}}</h1>
     </div>
     <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive"
           src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a></div>
@@ -20,34 +20,34 @@
             <div class="form-group">
               <div class="col-xs-6">
                 <label for="first_name"><h4>First name</h4></label>
-                <div>Current first name is: {{currentUser.firstname}}</div>
-                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any." [(ngModel)]="firstname">
+                <div>Current first name is: {{currentUser.firstName}}</div>
+                <input type="text"  [(ngModel)]="currentUser.firstName" class="form-control" name="first_name" id="first_name" title="enter your first name if any.">
               </div>
             </div>
             <div class="form-group">
               <div class="col-xs-6">
                 <label for="last_name"><h4>Last name</h4></label>
-                <div>Current last name is: {{currentUser.lastname}}</div>
-                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any." [(ngModel)]="lastname">
+                <div>Current last name is: {{currentUser.lastName}}</div>
+                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any." [(ngModel)]="currentUser.lastName">
               </div>
             </div>
             <div class="form-group">
               <div class="col-xs-6">
                 <label for="email"><h4>Email</h4></label>
                 <div>Current email is: {{currentUser.email}}</div>
-                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email." [(ngModel)]="email">
+                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email." [(ngModel)]="currentUser.email">
               </div>
             </div>
             <div class="form-group">
               <div class="col-xs-6">
                 <label for="password"><h4>Password</h4></label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password." [(ngModel)]="password">
+                <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password." [(ngModel)]="currentUser.password">
               </div>
             </div>
             <div class="form-group">
               <div class="col-xs-6">
-                <label for="password2"><h4>Verify</h4></label>
-                <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2." [(ngModel)]="validatePassword">
+                <label for="password2"><h4>Verify your password</h4></label>
+                <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2." [(ngModel)]="currentUser.password">
               </div>
             </div>
             <div class="form-group">

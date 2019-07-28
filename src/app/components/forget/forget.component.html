@@ -1,0 +1,12 @@
+<div style="text-align: center">
+  <h1>Forget</h1>
+</div>
+<form>
+  <div class="container">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="text" class="form-control" name="email" id="email" placeholder="E-Mail" required minlength="1" maxlength="50" [(ngModel)]="email">
+    </div>
+    <button type="button" class="btn btn-success" (click)="forget()">Reset Password</button>
+  </div>
+</form>

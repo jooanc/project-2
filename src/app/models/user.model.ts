@@ -1,11 +1,12 @@
 
 
 export class User {
-    id : Number;
-    username: String;
-    firstname: String;
-    lastname: String;
+    userId : Number;
+    userName: String;
+    firstName: String;
+    lastName: String;
     email: String;
     password: String;
+    playlist: [];
 
 }

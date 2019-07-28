@@ -1,5 +1,5 @@
 export const properties = {
 
-  url: 'http://localhost:8080/Project2/'
+  url: 'http://localhost:8080/Pear/user/'
 
 };

@@ -71,4 +71,16 @@ export class NavbarComponent implements OnInit {
     this.router.navigateByUrl('/create-account');
   }
 
+  forgotPassword() {
+    this.router.navigateByUrl('/forget');
+  }
+
+  userPlaylistView(){
+    this.router.navigateByUrl('/playlist');
+  }
+
+  userLibraryView(){
+    this.router.navigateByUrl('/library');
+  }
+
 }

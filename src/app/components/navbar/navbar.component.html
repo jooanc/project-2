@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="home"><img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"  width="90" height="38"> Pear Music</a>
+    <a class="navbar-brand" href="home"><img src="https://pear-music.s3.amazonaws.com/pear.jpg"  width="38" height="38"> Pear Music</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,8 +9,12 @@
 
     <a class="nav-link btn btn-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false" *ngIf="!loggedIn">Log In</a> 
+    <a class="nav-link btn btn-dark" (click)="forgotPassword()" id="navbarDropdownMenuLink" role="button"  *ngIf="!loggedIn" >Reset Password</a> 
     <a class="nav-link btn btn-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false" *ngIf="loggedIn">Account Info/Logout</a> 
+    <a class="nav-link btn btn-dark" (click)="userPlaylistView()" id="navbarDropdownMenuLink" role="button"  *ngIf="loggedIn" >View Playlist</a> 
+    <a class="nav-link btn btn-dark" (click)="userLibraryView()"  id="navbarDropdownMenuLink" role="button" *ngIf="loggedIn">View Library</a> 
+
     <div class="dropdown-menu" style="right: 0; left: auto;" aria-labelledby="navbarDropdownMenuLink">
       <div class="form-group m-2 " (keyup.enter)="login()" *ngIf="!loggedIn">
         <input type="text" name="username" id="nav-username" placeholder="Username" class="form-control" [(ngModel)]="username">

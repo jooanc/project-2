@@ -13,8 +13,8 @@ import { Router } from '@angular/router';
 })
 export class UserProfileComponent implements OnInit {
 
-  private firstname;
-  private lastname;
+  private firstName;
+  private lastName;
   private password;
   private validatePassword;
   private email;
@@ -40,11 +40,12 @@ export class UserProfileComponent implements OnInit {
 
   updateUser(){
     console.log(this.currentUser);
-    console.log(this.firstname, this.lastname, this.email, this.password, this.validatePassword);
-    if(this.firstname != undefined)
-      this.currentUser.firstname = this.firstname;
-    if(this.lastname != undefined)
-      this.currentUser.lastname = this.lastname;
+    console.log(this.firstName, this.lastName, this.email, this.password, this.validatePassword);
+    
+    if(this.firstName != undefined)
+      this.currentUser.firstName = this.firstName;
+    if(this.lastName != undefined)
+      this.currentUser.lastName = this.lastName;
     if(this.email != undefined)
       this.currentUser.email = this.email;
     if(this.password != undefined && this.password === this.validatePassword)

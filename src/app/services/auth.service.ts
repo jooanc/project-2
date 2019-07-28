@@ -16,7 +16,7 @@ export class AuthService {
 
   login(username: String, password: String): Observable<User> {
     const user = {
-      username: username,
+      userName: username,
       password: password
     };
     console.log(`Logging in ${username} with password: ${password}`);
@@ -27,13 +27,19 @@ export class AuthService {
 
   createAccount(username: String, password: String, firstname: String, lastname: String, email: String) {
     const user = {
-      username: username,
+      userName: username,
       password: password,
-      firstname: firstname,
-      lastname: lastname,
+      firstName: firstname,
+      lastName: lastname,
       email: email
     };
-    return this.http.post<User>(this.url.concat('users/add'), user);
+    return this.http.post<User>(this.url.concat(''), user);
+  }
+  forget(email: String) {
+    const user = {
+      email: email
+    };
+    return this.http.post<User>(this.url.concat('forget'), user);
   }
 
   validate(username: String, password: String): Boolean {
